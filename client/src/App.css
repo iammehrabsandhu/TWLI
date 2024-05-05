@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#bck{
+  background-image: url(Assets/bckgrnd1.jpeg);
+}
+
+#section2{
+  background-image: url(../public/images/secondbc.jpg);
+}
+
+

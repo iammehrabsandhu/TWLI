@@ -213,6 +213,7 @@ func main() {
 	if port == "" {
 		port = "3000"
 	}
-	log.Printf("listening on :%s\n", port)
-	log.Fatal(http.ListenAndServe(":"+port, nil))
+	addr := "0.0.0.0:" + port
+	log.Printf("listening on %s\n", addr)
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
